@@ -1,0 +1,89 @@
+body{
+  background-color: rgb(89, 88, 89);
+}
+
+.container {
+  background-image: url("../img/1500825597927.gif");
+  background-size: 960px 540px;
+  background-repeat: no-repeat;
+  overflow: auto;
+  white-space: nowrap;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 960px;
+  height: 540px;
+}
+
+.tabs {
+  font-family: fantasy;
+  font-size: 19px;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 25px 31px;
+  text-decoration: none;
+  width: 130px;
+}
+
+.dropdown {
+  position: relative;
+  float:left;
+  display: block;
+}
+.dropdown:hover{
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 192px;
+  top: 70px;
+  z-index: 1;
+  overflow: hidden;
+  height:0;
+  transition: 0.7s ease;
+}
+
+.dropdown-content a {
+  font-family: fantasy;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover::before{
+  content: "< "; 
+}
+
+.dropdown-content a:hover::after{
+  content: " >"; 
+}
+
+.dropdown:hover .dropdown-content {
+  height: 470px;
+}
+
+/* Color Tabs*/
+.backcolor1, .backcolor1 div{
+  background-color: rgba(23, 97, 107, 0.7);
+}
+.backcolor2, .backcolor2 div{
+  background-color: rgba(113, 205, 221, 0.7);
+}
+.backcolor3, .backcolor3 div{
+  background-color: rgba(251, 234, 174, 0.7);
+}
+.backcolor4, .backcolor4 div{
+  background-color: rgba(252, 206, 199, 0.7);
+}
+.backcolor5, .backcolor5 div{
+  background-color: rgba(255, 128, 108, 0.7);
+}
